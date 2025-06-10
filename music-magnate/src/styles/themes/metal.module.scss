@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #c0c0c0;
+    --accent-color: #ff0000;
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --border-radius: 0;
+    --spacing: 1rem;
+}
+
+.app {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:
+            linear-gradient(45deg, transparent 48%, var(--secondary-color) 49%, var(--secondary-color) 51%, transparent 52%),
+            linear-gradient(-45deg, transparent 48%, var(--secondary-color) 49%, var(--secondary-color) 51%, transparent 52%);
+        background-size: 30px 30px;
+        opacity: 0.1;
+    }
+}
+
+.header {
+    h1 {
+        color: var(--accent-color);
+        font-family: 'Metal Lord', 'Arial Black', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 0 var(--secondary-color);
+    }
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 20px rgba(192, 192, 192, 0.2);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: 'Metal Lord', 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid var(--secondary-color);
+
+    &:hover:not(:disabled) {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        transform: scale(1.05);
+    }
+}

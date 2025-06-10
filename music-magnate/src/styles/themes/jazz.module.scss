@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e67e22;
+    --accent-color: #f1c40f;
+    --background-color: #34495e;
+    --text-color: #ecf0f1;
+    --border-radius: 8px;
+    --spacing: 1rem;
+}
+
+.app {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:
+            radial-gradient(circle at 20% 20%, rgba(230, 126, 34, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(241, 196, 15, 0.1) 0%, transparent 50%);
+    }
+}
+
+.header {
+    h1 {
+        color: var(--accent-color);
+        font-family: 'Georgia', serif;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.main {
+    background: rgba(44, 62, 80, 0.9);
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    border: none;
+
+    &:hover:not(:disabled) {
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+        transform: translateY(-2px);
+    }
+}

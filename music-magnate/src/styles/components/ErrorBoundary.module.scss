@@ -1,0 +1,62 @@
+.errorBoundary {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    margin: 2rem auto;
+    max-width: 600px;
+
+    h2 {
+        color: var(--accent-color);
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: var(--text-color);
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .details {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        border-radius: var(--border-radius);
+        margin-bottom: 2rem;
+        text-align: left;
+
+        h3 {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        pre {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+    }
+
+    .retryButton {
+        background: var(--accent-color);
+        color: white;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            background-color: adjust-color(#e74c3c, $lightness: -10%);
+        }
+    }
+}

@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #8b4513;
+    --secondary-color: #d2b48c;
+    --accent-color: #deb887;
+    --background-color: #f5f5dc;
+    --text-color: #4a4a4a;
+    --border-radius: 0;
+    --spacing: 1rem;
+}
+
+.app {
+    background: linear-gradient(135deg, #f5f5dc, #d2b48c);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/assets/paper-texture.png');
+        opacity: 0.1;
+    }
+}
+
+.header {
+    h1 {
+        color: var(--primary-color);
+        font-family: 'Times New Roman', serif;
+        font-style: italic;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.main {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    border: 1px solid var(--secondary-color);
+
+    &:hover:not(:disabled) {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+}

@@ -1,0 +1,58 @@
+.progressBar {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+
+    // Высота
+    &.small {
+        height: 4px;
+    }
+
+    &.medium {
+        height: 8px;
+    }
+
+    &.large {
+        height: 12px;
+    }
+}
+
+.progress {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.3s ease;
+
+    // Цвета
+    &.primary {
+        background-color: var(--secondary-color);
+    }
+
+    &.accent {
+        background-color: var(--accent-color);
+    }
+
+    &.success {
+        background-color: #2ecc71;
+    }
+
+    &.warning {
+        background-color: #f1c40f;
+    }
+
+    &.error {
+        background-color: #e74c3c;
+    }
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}

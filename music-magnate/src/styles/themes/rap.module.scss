@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffd700;
+    --accent-color: #ff4500;
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --border-radius: 0;
+    --spacing: 1rem;
+}
+
+.app {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:
+            repeating-linear-gradient(45deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 215, 0, 0.1) 10px,
+                rgba(255, 215, 0, 0.1) 20px);
+    }
+}
+
+.header {
+    h1 {
+        color: var(--secondary-color);
+        font-family: 'Impact', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 0 var(--accent-color);
+    }
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.9);
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--secondary-color);
+
+    &:hover:not(:disabled) {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        transform: scale(1.05);
+    }
+}

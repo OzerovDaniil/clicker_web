@@ -1,0 +1,67 @@
+.button {
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    // Варианты
+    &.primary {
+        background-color: var(--secondary-color);
+        color: white;
+
+        &:hover:not(:disabled) {
+            background-color: adjust-color(#3498db, $lightness: -10%);
+        }
+    }
+
+    &.secondary {
+        background-color: transparent;
+        border: 2px solid var(--secondary-color);
+        color: var(--secondary-color);
+
+        &:hover:not(:disabled) {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+    }
+
+    &.accent {
+        background-color: var(--accent-color);
+        color: white;
+
+        &:hover:not(:disabled) {
+            background-color: adjust-color(#e74c3c, $lightness: -10%);
+        }
+    }
+
+    // Размеры
+    &.small {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    &.medium {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    &.large {
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+    }
+
+    // Полная ширина
+    &.fullWidth {
+        width: 100%;
+    }
+}

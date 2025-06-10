@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #8b4513;
+    --secondary-color: #deb887;
+    --accent-color: #ffd700;
+    --background-color: #f5f5dc;
+    --text-color: #4a4a4a;
+    --border-radius: 8px;
+    --spacing: 1rem;
+}
+
+.app {
+    background: linear-gradient(135deg, #f5f5dc, #deb887);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/assets/denim-texture.png');
+        opacity: 0.1;
+    }
+}
+
+.header {
+    h1 {
+        color: var(--primary-color);
+        font-family: 'Western', 'Times New Roman', serif;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.main {
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-family: 'Western', 'Times New Roman', serif;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+
+    &:hover:not(:disabled) {
+        background-color: var(--primary-color);
+        color: var(--accent-color);
+        transform: translateY(-2px);
+    }
+}

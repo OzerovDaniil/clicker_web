@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --border-radius: 8px;
+    --spacing: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: calc(var(--spacing) * 2);
+
+    h1 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing);
+    padding: var(--spacing);
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken(#3498db, 10%);
+    }
+
+    &:disabled {
+        background-color: #bdc3c7;
+        cursor: not-allowed;
+    }
+}
+
+.theme-classic {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #fff;
+    --text-color: #222;
+}
+
+.theme-rock {
+    --primary-color: #111;
+    --secondary-color: #e74c3c;
+    --accent-color: #c0392b;
+    --background-color: #fff0f0;
+    --text-color: #111;
+}
+
+.theme-pop {
+    --primary-color: #e84393;
+    --secondary-color: #fdcb6e;
+    --accent-color: #00b894;
+    --background-color: #fffbe7;
+    --text-color: #222;
+}
+
+.theme-electronic {
+    --primary-color: #222;
+    --secondary-color: #0984e3;
+    --accent-color: #6c5ce7;
+    --background-color: #e3f0ff;
+    --text-color: #111;
+}
+
+body,
+.app {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}

@@ -1,0 +1,35 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    min-width: 320px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.settingRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
