@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import styles from '../../styles/components/Card.module.scss';
+import styles from '@/styles/components/Card.module.scss';
 
 const Card = ({
     title,

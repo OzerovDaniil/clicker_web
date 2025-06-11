@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { setSkin } from '../../features/settings/settingsSlice';
-import styles from '../../styles/components/Skins.module.scss';
+import { setSkin } from '@/features/settings/settingsSlice';
+import styles from '@/styles/components/Skins.module.scss';
 
 const skins = [
     { id: 'classic', name: 'Класичний', icon: '🎼', unlock: () => true, unlockText: '' },

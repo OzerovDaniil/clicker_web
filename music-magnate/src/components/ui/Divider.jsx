@@ -1,4 +1,4 @@
-import styles from '../../styles/components/Divider.module.scss';
+import styles from '@/styles/components/Divider.module.scss';
 
 const Divider = ({
     text,

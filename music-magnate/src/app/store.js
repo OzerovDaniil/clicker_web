@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import clickerReducer from '../features/clicker/clickerSlice';
-import settingsReducer from '../features/settings/settingsSlice';
+import clickerReducer from '@/features/clicker/clickerSlice';
+import settingsReducer from '@/features/settings/settingsSlice';
 
 export const store = configureStore({
     reducer: {

@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
-import { addNotes, updateLastClickTime, startPenalty, stopPenalty, penaltyTick } from '../../features/clicker/clickerSlice';
+import { addNotes, updateLastClickTime, startPenalty, stopPenalty, penaltyTick } from '@/features/clicker/clickerSlice';
 import useSound from 'use-sound';
-import styles from '../../styles/components/ClickArea.module.scss';
+import styles from '@/styles/components/ClickArea.module.scss';
 import { useEffect } from 'react';
 
 const ClickArea = () => {

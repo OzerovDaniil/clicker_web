@@ -1,8 +1,9 @@
 import { useDispatch } from 'react-redux';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { addNotes, prestige } from '../../features/clicker/clickerSlice';
-import { unlockAllSkins, setSkin } from '../../features/settings/settingsSlice';
-import styles from '../../styles/components/AdminPanel.module.scss';
+import { motion } from 'framer-motion';
+import { addNotes, prestige } from '@/features/clicker/clickerSlice';
+import { unlockAllSkins, setSkin } from '@/features/settings/settingsSlice';
+import styles from '@/styles/components/AdminPanel.module.scss';
 import { useState } from 'react';
 
 const AdminPanel = () => {

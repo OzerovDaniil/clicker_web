@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
-import styles from '../../styles/components/Stats.module.scss';
+import styles from '@/styles/components/Stats.module.scss';
 
 const Stats = () => {
     const {

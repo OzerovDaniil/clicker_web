@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { purchaseUpgrade, activateBonus, deactivateBonus, BASE_UPGRADE_LIMITS } from '../../features/clicker/clickerSlice';
-import styles from '../../styles/components/Upgrades.module.scss';
+import { purchaseUpgrade, activateBonus, deactivateBonus, BASE_UPGRADE_LIMITS } from '@/features/clicker/clickerSlice';
+import styles from '@/styles/components/Upgrades.module.scss';
 
 const upgrades = [
     {

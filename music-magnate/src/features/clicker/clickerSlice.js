@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { saveGameState } from '../../db/database';
+import { saveGameState } from '@/db/database';
 
 const initialState = {
     notes: 100,

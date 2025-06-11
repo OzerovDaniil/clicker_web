@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleSound, setVolume } from '../../features/settings/settingsSlice';
-import { store } from '../../app/store';
-import styles from '../../styles/components/SettingsModal.module.scss';
+import { toggleSound, setVolume } from '@/features/settings/settingsSlice';
+import { store } from '@/app/store';
+import styles from '@/styles/components/SettingsModal.module.scss';
 
 const SettingsModal = ({ isOpen, onClose }) => {
     const dispatch = useDispatch();

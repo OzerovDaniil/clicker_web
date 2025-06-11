@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import styles from '../../styles/components/Grid.module.scss';
+import styles from '@/styles/components/Grid.module.scss';
 
 const Grid = ({
     items,

@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { addNotes, openCase } from '../../features/clicker/clickerSlice';
-import styles from '../../styles/components/Cases.module.scss';
+import { addNotes, openCase } from '@/features/clicker/clickerSlice';
+import styles from '@/styles/components/Cases.module.scss';
 
 const cases = [
     {
